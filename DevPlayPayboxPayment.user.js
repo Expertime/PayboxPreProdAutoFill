@@ -47,9 +47,11 @@
     
     function callpayboxipn() {
         var data = new Object();
-        data.pbx_cmd = $('title').text().substring(1,10);
-        //alert(data.pbx_cmd);
-        $.post('/paybox/payment/ipn/', data);
+        data.R = $('title').text().substring(1,10);
+        data.A = 9999;
+        data.K = "toto";
+
+        $.post('/paybox/payment/ipnover/', data);
     }
     
 })();
