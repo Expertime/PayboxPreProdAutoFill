@@ -42,6 +42,14 @@
     function letsJQuery() {
         GM_log($().jquery); // check jQuery version
         $('.content-header .form-buttons').prepend( "<button id=\"payboxpaymentdo\" title=\"PlayPayboxPayment\" type=\"button\" class=\"scalable\"><span><span><span>PlayPayboxPayment</span></span></span></button>" );
+        $('#payboxpaymentdo').click(callpayboxipn);
+    }
+    
+    function callpayboxipn() {
+        var data = new Object();
+        data.pbx_cmd = $('title').text().substring(1,10);
+        //alert(data.pbx_cmd);
+        $.post('/paybox/payment/ipn/', data);
     }
     
 })();
