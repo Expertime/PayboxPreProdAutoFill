@@ -48,8 +48,14 @@
     function callpayboxipn() {
         var data = new Object();
         data.R = $('title').text().substring(1,10);
-        data.A = 9999;
-        data.K = "toto";
+        data.M = 9999;
+        data.E = "00000";
+        data.T = data.R;
+        data.Q = "00:00";
+        data.W = "1/1/2015";
+        data.K = "signed";
+        data.S = data.R;
+        data.C = 'VISA';
 
         $.post('/paybox/payment/ipnover/', data);
     }
