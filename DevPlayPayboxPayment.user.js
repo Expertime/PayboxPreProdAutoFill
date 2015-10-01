@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Magento Inject IPN from Admin (DEV!)
 // @namespace    http://www.expertime.com/
-// @version      0.1
+// @version      1.0
 // @description  Magento inject IPN from admin page (DEV!)
 // @author       M.TUDURY
 // @match        http://*.dev/index.php/*/sales_order/view/order_id/*/key/*/
