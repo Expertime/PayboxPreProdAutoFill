@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  Magento inject IPN from admin page (DEV!)
 // @author       M.TUDURY
-// @match        http://*.dev/index.php/admin/sales_order/view/order_id/*/key/*/
+// @match        http://*.dev/index.php/*/sales_order/view/order_id/*/key/*/
 // @grant        unsafeWindow
 // @grant        GM_log
 // ==/UserScript==
